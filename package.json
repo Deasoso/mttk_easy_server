@@ -1,0 +1,17 @@
+{
+  "name": "node-easy-backend",
+  "version": "1.0.0",
+  "description": "an easy backend",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "moleculer": "^0.14.14",
+    "moleculer-web": "^0.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node src/service.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
