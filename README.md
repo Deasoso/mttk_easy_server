@@ -9,9 +9,5 @@
 
     node src/service.js
 
-然后在
-    
-    localhost:3000/products
-    
-看到微服务的返回
+## 文档编写中……
     
