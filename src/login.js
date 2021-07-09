@@ -1,6 +1,6 @@
 
 const HTTPServer = require("moleculer-web");
-// const axios = require('axios');
+const axios = require('axios');
 
 // Export the schema of service
 module.exports = {
@@ -22,8 +22,12 @@ module.exports = {
   },
   // name: "login",
   actions: {
-    loginWithPassword(ctx) {
-      return 'get a product' + ctx.params.user;
+    async loginWithPassword(ctx) {
+      const result = await axios.post('http://localhost:7001/login/account',{
+        username: ctx.params.user,
+        password: ctx.params.pw
+      });
+      return result;
     }
   }
 }
